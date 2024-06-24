@@ -1,0 +1,18 @@
+{
+    "version": "0.7.6",
+    "description": "CloudDrive - A cloud file system",
+    "homepage": "https://github.com/cloud-fs/cloud-fs.github.io",
+    "license": "MIT",
+    "url": "https://github.com/cloud-fs/cloud-fs.github.io/releases/download/v0.7.6/CloudDrive2Setup-X64-0.7.6.exe",
+    "bin": "CloudDrive2Setup-X64-0.7.6.exe",
+    "skip": {
+        "hash": true
+    },
+    "autoupdate": {
+        "url": "https://github.com/cloud-fs/cloud-fs.github.io/releases/download/v$version/CloudDrive2Setup-X64-$version.exe"
+    },
+    "checkver": {
+        "github": "https://github.com/cloud-fs/cloud-fs.github.io",
+        "regex": "/releases/download/v([\\d.]+)/CloudDrive2Setup-X64-([\\d.]+)\\.exe"
+    }
+}
